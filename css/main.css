@@ -162,7 +162,16 @@ body {
   margin-bottom: 94px;
 
   text-align: center;
-
+  min-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fon-hero.jpg);
+  /* background-image: url(../images/fon-hero.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #2f303a;
 }
 
@@ -216,7 +225,6 @@ body {
 
 .icon-antena::before {
   background-image: url(../images/antenna\ 1.svg); */
-}
 
 .features .item {
   width: 270px;
@@ -365,12 +373,60 @@ body {
 
 .list-com .item {
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background-color: #ffffff;
 }
 
 .list-com .item + .item {
   margin-left: 30px;
+}
+
+/* ПОСТІЙНІ КЛІЄНТИ */
+
+.container-clients {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-bottom: 94px;
+  width: 1200px;
+}
+
+.clients {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: #212121;
+}
+
+.list-clients {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+
+  list-style: none;
+}
+
+.list-clients .list {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 /* Футер */
@@ -427,7 +483,8 @@ body {
   margin-bottom: 9px;
 }
 
-/* Чим ми займаємось (portfolio) */
+/* PORTFOLIO */
+/* Чим ми займаємось  */
 
 .container-nav-port {
   margin-left: auto;
@@ -442,7 +499,7 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 50px;
-  width: 1200px;
+  width: 1170px;
 }
 
 .port-but .link {
@@ -506,6 +563,16 @@ body {
 .port-work .item {
   margin-right: 30px;
   margin-bottom: 30px;
+
+  width: 370px;
+  border: 1px solid #eeeeee;
+}
+
+.port-work .item:hover,
+.port-work .item:focus {
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .port-work .item:nth-child(3n) {
