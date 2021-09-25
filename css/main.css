@@ -202,13 +202,21 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   width: 1200px;
 }
 .container-features .list-feat {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.svg-features {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #e1e3eb;
 }
 
 /* АЛЬТЕРНАТИВА СПРАЙТУ */
@@ -272,7 +280,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  margin-bottom: 158px;
+  padding-bottom: 158px;
   width: 1200px;
 }
 
@@ -396,7 +404,6 @@ body {
 .clients {
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -414,19 +421,45 @@ body {
   justify-content: center;
 
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
 
   list-style: none;
+
+  /* outline: 1px solid black; */
+}
+
+.list-clients .button {
+  padding: 0;
+  border: none;
+}
+
+.button-icon {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  cursor: pointer;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+}
+
+.button-icon:hover,
+.button-icon:focus {
+  fill: #2196f3;
 }
 
 .list-clients .list {
-  width: 170px;
-  height: 92px;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.list-clients .list + .list {
+  margin-left: 30px;
 }
 
 /* Футер */
