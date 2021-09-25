@@ -115,13 +115,19 @@ body {
   margin-left: 50px;
 }
 
+.cont-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .cont-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.cont-nav {
+.mail .cont-nav {
   display: flex;
   margin-left: auto;
   margin-top: 0;
@@ -209,14 +215,6 @@ body {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.svg-features {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: #e1e3eb;
 }
 
 /* АЛЬТЕРНАТИВА СПРАЙТУ */
