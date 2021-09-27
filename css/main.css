@@ -111,6 +111,29 @@ body {
   padding-bottom: 32px;
 }
 
+.cont-nav .item {
+  display: flex;
+  align-items: center;
+}
+
+.svg-features {
+  cursor: pointer;
+
+  fill: #757575;
+
+  margin-left: 0;
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding: 0;
+
+  outline: 1px solid;
+}
+
+.svg-features:focus,
+.svg-features:hover {
+  fill: #2196f3;
+}
+
 .cont-nav .item + .item {
   margin-left: 50px;
 }
@@ -323,6 +346,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
+  padding-top: 94px;
   padding-bottom: 94px;
   width: 1200px;
 }
@@ -389,12 +413,61 @@ body {
   margin-left: 30px;
 }
 
+.list-social {
+  background-color: #ffffff;
+
+  list-style: none;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  /* outline: 1px solid green; */
+}
+
+.social .list-social + .list-social {
+  margin-left: 10px;
+}
+
+.button-link {
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.button-link:hover,
+.button-link:focus {
+  background-color: #2196f3;
+}
+
+.social .icon {
+  width: 20px;
+  height: 20px;
+
+  background-size: contain;
+  fill: #afb1b8;
+}
+
+.social .icon:focus,
+.social .icon:hover {
+  fill: #fff;
+}
+
 /* ПОСТІЙНІ КЛІЄНТИ */
 
 .container-clients {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
+  padding-top: 94px;
   padding-bottom: 94px;
   width: 1200px;
 }
@@ -425,13 +498,18 @@ body {
   margin-left: 0;
 
   list-style: none;
-
-  /* outline: 1px solid black; */
 }
 
 .list-clients .button {
   padding: 0;
   border: none;
+  background-color: #fff;
+}
+
+.list-clients .list:hover,
+.list-clients .list:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .button-icon {
@@ -469,6 +547,8 @@ body {
 }
 
 .container-foot {
+  display: flex;
+  align-items: baseline;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -508,10 +588,54 @@ body {
   list-style: none;
 }
 
-/* ??? Запитати,як забрати нижній маржин у посиланні-телефон ??? */
-
 .list-foot :not(:last-child) {
   margin-bottom: 9px;
+}
+
+.go {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.social-foot {
+  margin-left: 70px;
+}
+
+.list-social-foot {
+  list-style: none;
+}
+
+.button-link-foot {
+  cursor: pointer;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-link-foot:hover,
+.button-link-foot:focus {
+  background-color: #2196f3;
+}
+
+.social .list-social-foot + .list-social-foot {
+  margin-left: 10px;
 }
 
 /* PORTFOLIO */
@@ -534,6 +658,13 @@ body {
 }
 
 .port-but .link {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -542,21 +673,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  background-color: #f5f4fa;
 }
 
 .port-but .item + .item {
   margin-left: 9px;
-}
-
-.item button {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  background-color: #f5f4fa;
 }
 
 .port-but .link:focus,
