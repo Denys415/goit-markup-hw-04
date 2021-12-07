@@ -117,6 +117,8 @@ body {
 }
 
 .svg-features {
+  height: 16px;
+
   cursor: pointer;
 
   fill: #757575;
@@ -126,7 +128,7 @@ body {
   margin-bottom: 0;
   padding: 0;
 
-  outline: 1px solid;
+  /* outline: 1px solid; */
 }
 
 .svg-features:focus,
@@ -141,7 +143,9 @@ body {
 .cont-nav {
   display: flex;
   align-items: center;
+  margin-top: 0;
   margin-left: auto;
+  margin-bottom: 0;
 }
 
 .cont-nav .link {
@@ -158,7 +162,25 @@ body {
 }
 
 .site-nav .link.current {
+  position: relative;
+
   color: #2196f3;
+}
+
+.div-link .current::before {
+  position: absolute;
+
+  display: inline-block;
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: #2196f3;
 }
 
 .site-nav .link:focus,
@@ -326,6 +348,42 @@ body {
   text-align: center;
 
   color: #212121;
+}
+
+.div-work {
+  position: relative;
+}
+
+.div-text {
+  position: absolute;
+
+  left: 0;
+  width: 100%;
+  bottom: 27px;
+
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.list-work .div-work::before {
+  display: inline-block;
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .list-work {
@@ -645,7 +703,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 132px;
+  margin-bottom: 94px;
   width: 1200px;
 }
 
@@ -714,6 +772,8 @@ body {
 }
 
 .port-work .item {
+  position: relative;
+
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -721,11 +781,62 @@ body {
   border: 1px solid #eeeeee;
 }
 
+/* ПОЗИЦІОНОВАНІ ТА АНІМОВАНІ ЕЛЕМЕНТИ card */
+
+.port-work .item:hover::before {
+  display: inline-block;
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 1;
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 322px;
+  height: 168px;
+
+  margin: 0;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  opacity: 0;
+}
+
 .port-work .item:hover,
 .port-work .item:focus {
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
+}
+
+.port-work .item:hover .info {
+  opacity: 1;
+}
+
+.port-work .item:focus .info {
+  opacity: 1;
 }
 
 .port-work .item:nth-child(3n) {
@@ -746,6 +857,7 @@ body {
 .port-work .title {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 24px;
 
   font-style: normal;
   font-weight: 700;
@@ -768,6 +880,7 @@ body {
 .port-work .text {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 24px;
 
   font-style: normal;
   font-weight: normal;
